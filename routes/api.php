@@ -3,6 +3,7 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PelajarController;
+use App\Http\Controllers\TransaksiController;
 
 Route::get('/user', function (Request $request) {
     return $request->user();
@@ -12,3 +13,4 @@ Route::get('/pelajars', [PelajarController::class, 'index']);
 Route::post('/pelajars', [PelajarController::class, 'store']);
 Route::get('/pelajars/{id}', [PelajarController::class, 'show']);
 Route::put('/pelajars/{id}', [PelajarController::class, 'update']);
+Route::apiResource('transaksis', TransaksiController::class);
