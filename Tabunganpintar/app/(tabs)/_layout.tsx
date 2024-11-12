@@ -1,6 +1,6 @@
 import React from 'react';
 import { Tabs } from 'expo-router';
-import { Ionicons, MaterialIcons, MaterialCommunityIcons } from '@expo/vector-icons';
+import { Ionicons, MaterialIcons } from '@expo/vector-icons';
 import { View } from 'react-native';
 
 const Colors = {
@@ -34,10 +34,10 @@ export default function Layout() {
         }}
       />
       <Tabs.Screen
-        name="calender"
+        name="card"
         options={{
           tabBarIcon: ({ color }) => (
-            <Ionicons name="calendar" size={24} color={color} />
+            <Ionicons name="card" size={28} color={color} />
           ),
         }}
       />
@@ -60,10 +60,10 @@ export default function Layout() {
         }}
       />
       <Tabs.Screen
-        name="bookmarks"
+        name="inbox"
         options={{
           tabBarIcon: ({ color }) => (
-            <Ionicons name="bookmarks" size={28} color={color} />
+            <Ionicons name="chatbubbles" size={28} color={color} />
           ),
         }}
       />

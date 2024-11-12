@@ -4,7 +4,7 @@ import React from 'react'
 const home = () => {
   return (
     <View style={styles.container}>
-      <Text>Calender</Text>
+      <Text>Inbox</Text>
     </View>
   )
 }
