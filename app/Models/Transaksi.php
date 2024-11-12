@@ -8,4 +8,15 @@ use Illuminate\Database\Eloquent\Model;
 class Transaksi extends Model
 {
     use HasFactory;
+     /**
+     * fillable
+     *
+     * @var array
+     */
+    protected $fillable = [
+      'nama',
+      'nis',
+      'email',
+      'password',
+  ];
 }
